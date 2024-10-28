@@ -1,0 +1,58 @@
+{
+  "name": "Angapp",
+  "bucket": "Angapp",
+  "preset": "angular",
+  "env": "production",
+  "prefix": "20241028032200",
+  "not-first-run": true,
+  "function": {
+    "id": 31295,
+    "name": "__DEFAULT__",
+    "file": ".edge/worker.js",
+    "args": "azion/args.json",
+    "instance-id": 29980,
+    "instance-name": "__DEFAULT__",
+    "cache-id": 0
+  },
+  "application": {
+    "id": 1730082239,
+    "name": "__DEFAULT__"
+  },
+  "domain": {
+    "id": 1730080904,
+    "name": "Angapp",
+    "domain_name": "fhonzh29fe.map.azionedge.net",
+    "url": "https://fhonzh29fe.map.azionedge.net"
+  },
+  "rt-purge": {
+    "purge_on_publish": true
+  },
+  "origin": [
+    {
+      "origin-id": 160485,
+      "origin-key": "bc1f7f39-d9b4-41f9-8f03-c21cade20519",
+      "name": "origin-storage-default"
+    }
+  ],
+  "rules-engine": {
+    "created": false,
+    "rules": [
+      {
+        "id": 311940,
+        "name": "Set Storage Origin for All Requests",
+        "phase": "request"
+      },
+      {
+        "id": 311941,
+        "name": "Deliver Static Assets",
+        "phase": "request"
+      },
+      {
+        "id": 311942,
+        "name": "Redirect to index.html",
+        "phase": "request"
+      }
+    ]
+  },
+  "cache-settings": []
+}
