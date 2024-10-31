@@ -1,47 +1,347 @@
-<div class="container">
-  <header class="header">
-    <img src="assets/azion.svg" alt="Azion Logo" class="logo" />
-    <nav class="nav">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- header section starts -->
 
-  <main class="main-content">
-    <div class="hero">
-      <img src="assets/angular.svg" alt="Angular Logo" class="hero-logo" />
-      <h1>Welcome to Our Application</h1>
-      <p>Explore the features and functionalities we offer.</p>
-    </div>
-  </main>
+    <header class="header">
 
-  <footer class="footer">
-    <div class="footer-item">
-      <a href="https://www.azion.com/en/documentation/" target="_blank">
-        <h1>Docs</h1>
-        <p>Explore our documentation for detailed information.</p>
-      </a>
-    </div>
-    <div class="footer-item">
-      <a href="https://medium.com/aziontech" target="_blank">
-        <h1>Medium</h1>
-        <p>Join our community on Medium for insights and updates.</p>
-      </a>
-    </div>
-    <div class="footer-item">
-      <a href="https://twitter.com/aziontech" target="_blank">
-        <h1>X (formerly Twitter)</h1>
-        <p>Follow us for the latest news and updates.</p>
-      </a>
-    </div>
-    <div class="footer-item">
-      <a href="https://discord.gg/Yp9N7RMVZy" target="_blank">
-        <h1>Discord</h1>
-        <p>Connect with us and other developers on Discord.</p>
-      </a>
-    </div>
-  </footer>
-</div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#" class="logo">travel</a>
+
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#packages">packages</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+        </nav>
+
+        <a href="#book" class="btn"> book now</a>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>DISCOVER THRILLING ADVENTURES</h3>
+            <p>Embark On Exciting Journeys With Us</p>
+            <a href="#" class="btn"> discover more</a>
+        </div>
+
+        <div class="video-container">
+            <video src="images/home.mp4" id="video" loop autoplay muted></video>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading">about us</h1>
+
+        <div class="container">
+
+            <div class="image-container">
+                <img src="images/about-1.jpg" alt="" class="image">
+                <div class="controls">
+                    <span class="control-btn" data-src="images/about-1.jpg"></span>
+                    <span class="control-btn" data-src="images/about-2.jpg"></span>
+                    <span class="control-btn" data-src="images/about-3.jpg"></span>
+                </div>
+            </div>
+
+            <div class="content">
+                <span>Welcome To Our Journey</span>
+                <h3>Embark On Unforgettable Journeys</h3>
+                <p>Immerse Yourself In The Art Of Exploration With Us. Our Mission Is To Craft Unique And 
+                    Enriching Travel Experiences For Every Adventurer. Guided By A Passion For Discovery, 
+                    We Invite You To Join Us On A Journey Where Each Destination Becomes A Chapter In Your 
+                    Own Travel Story.</p>
+                <a href="#" class="btn"> read more</a>    
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- services section starts -->
+
+    <section class="services" id="services">
+
+        <h1 class="heading">our services</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/services-1.png" alt="">
+                <h3>affordable hotel</h3>
+                <p>Budget-friendly hotel with comfortable amenities,ideal for savy travelers seeking affordability without compromising quality</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/services-2.png" alt="">
+                <h3>adventures</h3>
+                <p>Experience exciting adventures with heart-pounding activities and stunning scenery for a tripn you'll never forget.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/services-3.png" alt="">
+                <h3>food & drinks</h3>
+                <p>Enjoy delicious food and drinks that elevate your travel moments with diverse diming options.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- pckages section starts -->
+
+    <section class="packages" id="packages">
+
+        <h1 class="heading">our packages</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/package-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Newyork</h3>
+                    <div class="price">$170.99 <span> $220.99</span></div>
+                    <p>Experience the pulse of New York: Skyscrapers, arts, diverse energy</p>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/package-2.avif" alt="">
+                </div>
+                <div class="content">
+                    <h3>Norway</h3>
+                    <div class="price">$160.99 <span> $220.99</span></div>
+                    <p>Embark on an extraordinary Norwegian journey: Fjords, auroras, and breathtaking landscapes await</p>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/package-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Maldives</h3>
+                    <div class="price">$180.99 <span> $220.99</span></div>
+                    <p>Discover unparalleled luxury and serenity in the Maldives' pristine paradise</p>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/package-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>London</h3>
+                    <div class="price">$200.99 <span> $240.99</span></div>
+                    <p>Immerse yourself in the grandeur of London's iconic landmarks and cultural sophistication with our exceptional travel packages</p>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/package-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Japan</h3>
+                    <div class="price">$280.99 <span> $300.99</span></div>
+                    <p>Embark on an enchanting journey through Japan's rich cultural tapestry with our travel packages, immersing yourself in the beauty of cherry blossoms, historic temples, and cutting-edge technology</p>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/package-6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Singapore</h3>
+                    <div class="price">$300.99 <span> $350.99</span></div>
+                    <p>Experience the vibrant blend of modernity and tradition in Singapore with our travel packages, offering a captivating journey through iconic landmarks, diverse cuisines, and unparalleled cityscapes</p>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- pckages section ends -->
+
+
+    <!-- gallery section starts -->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading">our gallery</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/gallery-1.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/gallery-2.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/gallery-3.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/gallery-4.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/gallery-5.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/gallery-6.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- gallery section ends -->
+
+
+    <!-- book section starts -->
+
+    <section class="book" id="book">
+
+        <div class="row">
+
+            <form action="">
+                <div class="inputBox">
+                    <h3>where to</h3>
+                    <input type="text" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>how many</h3>
+                    <input type="text" placeholder="number of guests">
+                </div>
+                <div class="inputBox">
+                    <h3>arrivals</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>leaving</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" value="book now" class="btn">
+            </form>
+             </div>
+
+        </div>
+
+    </section>
+
+    <!-- book section ends -->
+
+    <!-- newsletter section starts -->
+
+    <section class="newsletter">
+
+        <div class="content">
+            <h3>sign up and get started</h3>
+            <form action="">
+                <input type="email" placeholder="Enter Your Email" class="email">
+                <input type="submit" value="sign up" class="btn">
+            </form> 
+            <p>already have an account? <a href="#">sign in</a></p>
+        </div>
+
+    </section>
+
+    <!-- newsletter section ends -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +234-8656-82736</a>
+                <a href="#"><i class="fas fa-envelope"></i> parneynagacharanya@gmail.com</a>
+                <a href="#"><i class="fas fa-map"></i> Hyderabad</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> popular destinations</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> popular destinations</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> popular destinations</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> popular destinations</a>
+            </div>
+
+            <div class="box">
+                <h3>travel resources</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> travel guide</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> travel guide</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> travel guide</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> travel guide</a>
+            </div>
+
+            <div class="box">
+                <h3>legal information</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> terms and conditions</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> terms and conditions</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> terms and conditions</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> terms and conditions</a>
+            </div>
+
+        </div>
+
+        <div class="credit">created by <span>Nagacharanya</span> | all rights reserved!</div>
+
+    </section>
+
+<!-- footer section ends -->
+<!-- custom js file link -->
+    <script src="script.js"></script>
+</body>
+</html>
